@@ -1,16 +1,27 @@
-# React + Vite
+# Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Project frontend berbasis **Node.js** menggunakan **Vite**.
 
-Currently, two official plugins are available:
+## Requirement
+Pastikan sudah install:
+- **Node.js** (disarankan versi LTS)
+- **npm** (biasanya sudah ikut saat install Node.js)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Cek versi:
+```bash
+node -v
+npm -v
 
-## React Compiler
+# Clone Repository
+git clone https://github.com/pencarikebaikan/Frontend.git
+cd Frontend
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# Run Development Server
 
-## Expanding the ESLint configuration
+# Untuk menjalankan project di mode development:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+npm run dev
+
+# Jika berhasil, aplikasi bisa diakses melalui browser di alamat:
+
+http://localhost:5173
