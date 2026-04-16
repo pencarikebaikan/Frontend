@@ -11,7 +11,7 @@ export default function Preview() {
   const perPage = 5;
 
   useEffect(() => {
-    axios.get("http://localhost:3000/article/100/0")
+    axios.get("https://backend-b-753721120012.asia-southeast2.run.app/article/100/0")
       .then(res => {
         // filter hanya publish
         const published = res.data.filter(p => p.Status === "publish");

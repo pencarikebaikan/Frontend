@@ -19,7 +19,7 @@ export default function AddNew() {
     setErrors(newErrors);
     if (Object.keys(newErrors).length > 0) return;
 
-    axios.post("http://localhost:3000/article", {
+    axios.post("https://backend-b-753721120012.asia-southeast2.run.app/article", {
       title,
       content,
       category,

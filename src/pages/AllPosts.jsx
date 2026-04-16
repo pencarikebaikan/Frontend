@@ -11,7 +11,7 @@ export default function AllPosts() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get("http://localhost:3000/article/100/0")
+    axios.get("https://backend-b-753721120012.asia-southeast2.run.app/article/100/0")
       .then(res => {
         if (Array.isArray(res.data)) {
           setPosts(res.data);
@@ -30,7 +30,7 @@ export default function AllPosts() {
 
   const handleTrash = async (post) => {
     try {
-      await axios.put(`http://localhost:3000/article/id/${post.ID}`, {
+      await axios.put(`https://backend-b-753721120012.asia-southeast2.run.app/article/id/${post.ID}`, {
         Title: post.Title,
         Content: post.Content,
         Category: post.Category,

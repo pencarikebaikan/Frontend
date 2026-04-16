@@ -12,7 +12,7 @@ export default function EditArticle() {
   const [category, setCategory] = useState("");
 
   useEffect(() => {
-    axios.get(`http://localhost:3000/article/id/${id}`)
+    axios.get(`https://backend-b-753721120012.asia-southeast2.run.app/article/id/${id}`)
       .then(res => {
         const data = res.data;
         setTitle(data.Title);
@@ -23,7 +23,7 @@ export default function EditArticle() {
   }, [id]);
 
   const updateArticle = (status) => {
-    axios.put(`http://localhost:3000/article/id/${id}`, {
+    axios.put(`https://backend-b-753721120012.asia-southeast2.run.app/article/id/${id}`, {
       title,
       content,
       category,
